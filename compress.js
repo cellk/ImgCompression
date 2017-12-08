@@ -10,10 +10,11 @@
  */
 
 /**
+ * Create the object.
  * @constructor
  */
 
-var kt = {
+var image = {
     /**
      * Compress an Image Object and upload it to the server via ajax
      * @param {params} compressed_img_obj The Compressed Image Object
@@ -24,6 +25,8 @@ var kt = {
      * @param {Object} (OPTIONAL) customHeaders An object representing key-value  properties to inject to the request header.
      */
     compress: function (params, f, successCallback, errorCallback, duringCallback, customHeaders) {
+
+//        console.log(f);
 
         if (f.files.length == 0) {
             alert('Not file to compress');
